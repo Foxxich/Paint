@@ -1,0 +1,187 @@
+\hypertarget{class_figure}{}\section{Figure Class Reference}
+\label{class_figure}\index{Figure@{Figure}}
+Inheritance diagram for Figure\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_figure}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract boolean \mbox{\hyperlink{class_figure_adeb77ba46e22fad8a9bc86c10ac62221}{is\+Mouse\+Over}} (int x, int y)
+\item 
+void \mbox{\hyperlink{class_figure_aa4f43d4c640d16823dc2b451fbc92020}{set\+Color}} (Color \mbox{\hyperlink{class_figure_a264181e47dd7b6155b4df4a772c2fd46}{color}})
+\item 
+Color \mbox{\hyperlink{class_figure_a2c6e7cdb87fde8ce5f303c912e94ecba}{get\+Color}} ()
+\item 
+void \mbox{\hyperlink{class_figure_a559fabea6b75d3f0bcfd95aef5149823}{set\+Size}} (double \mbox{\hyperlink{class_figure_a538152f79733ae6b690797afd69aab57}{size}})
+\item 
+void \mbox{\hyperlink{class_figure_a7cd86e9fc5326d26fbb007f849ca5dc0}{setX}} (int x)
+\item 
+void \mbox{\hyperlink{class_figure_a8157494a31103df133ebf92d5f60cb0e}{setY}} (int y)
+\item 
+double \mbox{\hyperlink{class_figure_af7805096bd258d3d609009c6459a082b}{get\+Size}} ()
+\item 
+int \mbox{\hyperlink{class_figure_a0d6e3c4fdb516610efa25df8a153b7a4}{getX}} ()
+\item 
+int \mbox{\hyperlink{class_figure_adfd5283d53d0885b145d9c65d2f20ac3}{getY}} ()
+\item 
+abstract void \mbox{\hyperlink{class_figure_ab46c536e10ff5b8546963b00d2fef7b4}{draw}} (Graphics g)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_figure_a51f58aeb00bfc8076424277e98dd3671}{X}}
+\item 
+int \mbox{\hyperlink{class_figure_a7a254120a4c69fb73048cfc9fdcdeebb}{Y}}
+\item 
+double \mbox{\hyperlink{class_figure_a538152f79733ae6b690797afd69aab57}{size}}
+\item 
+Color \mbox{\hyperlink{class_figure_a264181e47dd7b6155b4df4a772c2fd46}{color}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This abstract class is used to implement some parameters for every object. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_figure_ab46c536e10ff5b8546963b00d2fef7b4}\label{class_figure_ab46c536e10ff5b8546963b00d2fef7b4}} 
+\index{Figure@{Figure}!draw@{draw}}
+\index{draw@{draw}!Figure@{Figure}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily abstract void Figure.\+draw (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+This abstract method is used to paint the objects. 
+\begin{DoxyParams}{Parameters}
+{\em g} & This is the graphics used to paint objects in repaint() method. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_figure_a2c6e7cdb87fde8ce5f303c912e94ecba}\label{class_figure_a2c6e7cdb87fde8ce5f303c912e94ecba}} 
+\index{Figure@{Figure}!getColor@{getColor}}
+\index{getColor@{getColor}!Figure@{Figure}}
+\subsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily Color Figure.\+get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This is a method used to change the parametr color. \begin{DoxyReturn}{Returns}
+changes the colour of chosen figure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_figure_af7805096bd258d3d609009c6459a082b}\label{class_figure_af7805096bd258d3d609009c6459a082b}} 
+\index{Figure@{Figure}!getSize@{getSize}}
+\index{getSize@{getSize}!Figure@{Figure}}
+\subsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily double Figure.\+get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This is a method used to get the size of object. And change the size, if the 2nd mouse key wheel is turned. \begin{DoxyReturn}{Returns}
+the new size of chosen figure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_figure_a0d6e3c4fdb516610efa25df8a153b7a4}\label{class_figure_a0d6e3c4fdb516610efa25df8a153b7a4}} 
+\index{Figure@{Figure}!getX@{getX}}
+\index{getX@{getX}!Figure@{Figure}}
+\subsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily int Figure.\+getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This is a method used to change standart. X to the X coordinate of mouse cursor. \begin{DoxyReturn}{Returns}
+the X position of mouse cursor relative to the window. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_figure_adfd5283d53d0885b145d9c65d2f20ac3}\label{class_figure_adfd5283d53d0885b145d9c65d2f20ac3}} 
+\index{Figure@{Figure}!getY@{getY}}
+\index{getY@{getY}!Figure@{Figure}}
+\subsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily int Figure.\+getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This is a method used to change standart. Y to the Y coordinate of mouse cursor. \begin{DoxyReturn}{Returns}
+the Y position of mouse cursor relative to the window. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_figure_adeb77ba46e22fad8a9bc86c10ac62221}\label{class_figure_adeb77ba46e22fad8a9bc86c10ac62221}} 
+\index{Figure@{Figure}!isMouseOver@{isMouseOver}}
+\index{isMouseOver@{isMouseOver}!Figure@{Figure}}
+\subsubsection{\texorpdfstring{isMouseOver()}{isMouseOver()}}
+{\footnotesize\ttfamily abstract boolean Figure.\+is\+Mouse\+Over (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+This abstract boolean method is used to get parametrs and check if the mouse cursor is over the object or it is not. 
+\begin{DoxyParams}{Parameters}
+{\em x} & This is the x position, where will be build the object. \\
+\hline
+{\em y} & This is the y position, where will be build the object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_figure_aa4f43d4c640d16823dc2b451fbc92020}\label{class_figure_aa4f43d4c640d16823dc2b451fbc92020}} 
+\index{Figure@{Figure}!setColor@{setColor}}
+\index{setColor@{setColor}!Figure@{Figure}}
+\subsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily void Figure.\+set\+Color (\begin{DoxyParamCaption}\item[{Color}]{color }\end{DoxyParamCaption})}
+
+This is a method ,which sets given colour as object colour. 
+\begin{DoxyParams}{Parameters}
+{\em color} & This is the set colour. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_figure_a559fabea6b75d3f0bcfd95aef5149823}\label{class_figure_a559fabea6b75d3f0bcfd95aef5149823}} 
+\index{Figure@{Figure}!setSize@{setSize}}
+\index{setSize@{setSize}!Figure@{Figure}}
+\subsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily void Figure.\+set\+Size (\begin{DoxyParamCaption}\item[{double}]{size }\end{DoxyParamCaption})}
+
+This is a method used to change the size of each object. 
+\begin{DoxyParams}{Parameters}
+{\em size} & This is the side length of chosen object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_figure_a7cd86e9fc5326d26fbb007f849ca5dc0}\label{class_figure_a7cd86e9fc5326d26fbb007f849ca5dc0}} 
+\index{Figure@{Figure}!setX@{setX}}
+\index{setX@{setX}!Figure@{Figure}}
+\subsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily void Figure.\+setX (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+This is a method used to make X=the position of mouse cursor. 
+\begin{DoxyParams}{Parameters}
+{\em x} & This is the x position, where will be build the object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_figure_a8157494a31103df133ebf92d5f60cb0e}\label{class_figure_a8157494a31103df133ebf92d5f60cb0e}} 
+\index{Figure@{Figure}!setY@{setY}}
+\index{setY@{setY}!Figure@{Figure}}
+\subsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily void Figure.\+setY (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})}
+
+This is a method used to make Y=the position of mouse cursor. 
+\begin{DoxyParams}{Parameters}
+{\em y} & This is the y position, where will be build the object. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_figure_a264181e47dd7b6155b4df4a772c2fd46}\label{class_figure_a264181e47dd7b6155b4df4a772c2fd46}} 
+\index{Figure@{Figure}!color@{color}}
+\index{color@{color}!Figure@{Figure}}
+\subsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily Color Figure.\+color\hspace{0.3cm}{\ttfamily [protected]}}
+
+color is the set colour. \mbox{\Hypertarget{class_figure_a538152f79733ae6b690797afd69aab57}\label{class_figure_a538152f79733ae6b690797afd69aab57}} 
+\index{Figure@{Figure}!size@{size}}
+\index{size@{size}!Figure@{Figure}}
+\subsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily double Figure.\+size\hspace{0.3cm}{\ttfamily [protected]}}
+
+size is the side length. \mbox{\Hypertarget{class_figure_a51f58aeb00bfc8076424277e98dd3671}\label{class_figure_a51f58aeb00bfc8076424277e98dd3671}} 
+\index{Figure@{Figure}!X@{X}}
+\index{X@{X}!Figure@{Figure}}
+\subsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily int Figure.\+X\hspace{0.3cm}{\ttfamily [protected]}}
+
+X is the position, where will be build the object. \mbox{\Hypertarget{class_figure_a7a254120a4c69fb73048cfc9fdcdeebb}\label{class_figure_a7a254120a4c69fb73048cfc9fdcdeebb}} 
+\index{Figure@{Figure}!Y@{Y}}
+\index{Y@{Y}!Figure@{Figure}}
+\subsubsection{\texorpdfstring{Y}{Y}}
+{\footnotesize\ttfamily int Figure.\+Y\hspace{0.3cm}{\ttfamily [protected]}}
+
+Y is the position, where will be build the object. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_figure_8java}{Figure.\+java}}\end{DoxyCompactItemize}

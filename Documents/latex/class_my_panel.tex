@@ -1,0 +1,195 @@
+\hypertarget{class_my_panel}{}\section{My\+Panel Class Reference}
+\label{class_my_panel}\index{MyPanel@{MyPanel}}
+Inheritance diagram for My\+Panel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.985816cm]{class_my_panel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_my_panel_a9395d78dbd3ccb9159bcdfd8fa54bf62}{My\+Panel}} ()
+\item 
+Array\+List$<$ \mbox{\hyperlink{class_figure}{Figure}} $>$ \mbox{\hyperlink{class_my_panel_a5973b6511dee7060ee7cc5e49b37c836}{get\+Figures}} ()
+\item 
+void \mbox{\hyperlink{class_my_panel_a3a0c9daa133938d79c9750bd684967e6}{set\+Figures}} (Array\+List$<$ \mbox{\hyperlink{class_figure}{Figure}} $>$ figures)
+\item 
+void \mbox{\hyperlink{class_my_panel_a3a1214eb7ae2f5d5bb1cdb21d8a4b097}{set\+Next\+Figure}} (String name)
+\item 
+void \mbox{\hyperlink{class_my_panel_a01d8184b14a097e845b1845ddf3e4d7d}{paint\+Component}} (Graphics g)
+\item 
+void \mbox{\hyperlink{class_my_panel_a657ce352f2f06f2cf535b08019849bef}{mouse\+Clicked}} (Mouse\+Event e)
+\item 
+void \mbox{\hyperlink{class_my_panel_ad1ac4015693658076ffa37d8d3cc16dc}{mouse\+Pressed}} (Mouse\+Event e)
+\item 
+void \mbox{\hyperlink{class_my_panel_a975c43d6d03a6dce44f1791bce757839}{mouse\+Released}} (Mouse\+Event e)
+\item 
+void \mbox{\hyperlink{class_my_panel_afaf9c657c61bebb715330371b17b9852}{mouse\+Entered}} (Mouse\+Event e)
+\item 
+void \mbox{\hyperlink{class_my_panel_a86b4f660c427fa44902e777f26d5ea54}{mouse\+Exited}} (Mouse\+Event e)
+\item 
+void \mbox{\hyperlink{class_my_panel_a89449fea451e2350cdec8bd638d36344}{mouse\+Dragged}} (Mouse\+Event e)
+\item 
+void \mbox{\hyperlink{class_my_panel_ae26f94cb4b562a2c26928914de71b76e}{mouse\+Moved}} (Mouse\+Event e)
+\item 
+void \mbox{\hyperlink{class_my_panel_ad512efaf729c549e397b58498bff6043}{mouse\+Wheel\+Moved}} (Mouse\+Wheel\+Event e)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used to create J\+Panel for adding objects on it. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_my_panel_a9395d78dbd3ccb9159bcdfd8fa54bf62}\label{class_my_panel_a9395d78dbd3ccb9159bcdfd8fa54bf62}} 
+\index{MyPanel@{MyPanel}!MyPanel@{MyPanel}}
+\index{MyPanel@{MyPanel}!MyPanel@{MyPanel}}
+\subsubsection{\texorpdfstring{MyPanel()}{MyPanel()}}
+{\footnotesize\ttfamily My\+Panel.\+My\+Panel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method is used to add Listeners. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_my_panel_a5973b6511dee7060ee7cc5e49b37c836}\label{class_my_panel_a5973b6511dee7060ee7cc5e49b37c836}} 
+\index{MyPanel@{MyPanel}!getFigures@{getFigures}}
+\index{getFigures@{getFigures}!MyPanel@{MyPanel}}
+\subsubsection{\texorpdfstring{getFigures()}{getFigures()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{class_figure}{Figure}}$>$ My\+Panel.\+get\+Figures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method is used to give a list of all figures. \begin{DoxyReturn}{Returns}
+list of all figures. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_my_panel_a657ce352f2f06f2cf535b08019849bef}\label{class_my_panel_a657ce352f2f06f2cf535b08019849bef}} 
+\index{MyPanel@{MyPanel}!mouseClicked@{mouseClicked}}
+\index{mouseClicked@{mouseClicked}!MyPanel@{MyPanel}}
+\subsubsection{\texorpdfstring{mouseClicked()}{mouseClicked()}}
+{\footnotesize\ttfamily void My\+Panel.\+mouse\+Clicked (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+Invoked when the mouse button has been clicked (pressed and released) on a component. 
+\begin{DoxyParams}{Parameters}
+{\em e} & the event to be processed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_my_panel_a89449fea451e2350cdec8bd638d36344}\label{class_my_panel_a89449fea451e2350cdec8bd638d36344}} 
+\index{MyPanel@{MyPanel}!mouseDragged@{mouseDragged}}
+\index{mouseDragged@{mouseDragged}!MyPanel@{MyPanel}}
+\subsubsection{\texorpdfstring{mouseDragged()}{mouseDragged()}}
+{\footnotesize\ttfamily void My\+Panel.\+mouse\+Dragged (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+This method is used for checking, if the mouse was dragged. If the mouse was drugged,the program also checks, if there is a figure under cursor. It is necessary for changing the cursor and doing other stuff. Invoked when a mouse button is pressed on a component and then dragged.
+\begin{DoxyCode}{0}
+\DoxyCodeLine{MOUSE\_DRAGGED }
+\end{DoxyCode}
+ events will continue to be delivered to the component where the drag originated until the mouse button is released (regardless of whether the mouse position is within the bounds of the component). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & This is the action listener used to methods with mouse. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_my_panel_afaf9c657c61bebb715330371b17b9852}\label{class_my_panel_afaf9c657c61bebb715330371b17b9852}} 
+\index{MyPanel@{MyPanel}!mouseEntered@{mouseEntered}}
+\index{mouseEntered@{mouseEntered}!MyPanel@{MyPanel}}
+\subsubsection{\texorpdfstring{mouseEntered()}{mouseEntered()}}
+{\footnotesize\ttfamily void My\+Panel.\+mouse\+Entered (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+This method is used for checking, if the mouse entered the component. Invoked when the mouse enters a component. 
+\begin{DoxyParams}{Parameters}
+{\em e} & the event to be processed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_my_panel_a86b4f660c427fa44902e777f26d5ea54}\label{class_my_panel_a86b4f660c427fa44902e777f26d5ea54}} 
+\index{MyPanel@{MyPanel}!mouseExited@{mouseExited}}
+\index{mouseExited@{mouseExited}!MyPanel@{MyPanel}}
+\subsubsection{\texorpdfstring{mouseExited()}{mouseExited()}}
+{\footnotesize\ttfamily void My\+Panel.\+mouse\+Exited (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+This method is used for checking, the mouse continued to be within the component. Invoked when the mouse exits a component. 
+\begin{DoxyParams}{Parameters}
+{\em e} & the event to be processed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_my_panel_ae26f94cb4b562a2c26928914de71b76e}\label{class_my_panel_ae26f94cb4b562a2c26928914de71b76e}} 
+\index{MyPanel@{MyPanel}!mouseMoved@{mouseMoved}}
+\index{mouseMoved@{mouseMoved}!MyPanel@{MyPanel}}
+\subsubsection{\texorpdfstring{mouseMoved()}{mouseMoved()}}
+{\footnotesize\ttfamily void My\+Panel.\+mouse\+Moved (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+Invoked when the mouse cursor has been moved onto a component but no buttons have been pushed. 
+\begin{DoxyParams}{Parameters}
+{\em e} & the event to be processed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_my_panel_ad1ac4015693658076ffa37d8d3cc16dc}\label{class_my_panel_ad1ac4015693658076ffa37d8d3cc16dc}} 
+\index{MyPanel@{MyPanel}!mousePressed@{mousePressed}}
+\index{mousePressed@{mousePressed}!MyPanel@{MyPanel}}
+\subsubsection{\texorpdfstring{mousePressed()}{mousePressed()}}
+{\footnotesize\ttfamily void My\+Panel.\+mouse\+Pressed (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+This method is used for checking, which key was pressed. Invoked when a mouse button has been released on a component. 
+\begin{DoxyParams}{Parameters}
+{\em e} & the event to be processed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_my_panel_a975c43d6d03a6dce44f1791bce757839}\label{class_my_panel_a975c43d6d03a6dce44f1791bce757839}} 
+\index{MyPanel@{MyPanel}!mouseReleased@{mouseReleased}}
+\index{mouseReleased@{mouseReleased}!MyPanel@{MyPanel}}
+\subsubsection{\texorpdfstring{mouseReleased()}{mouseReleased()}}
+{\footnotesize\ttfamily void My\+Panel.\+mouse\+Released (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+Invoked when a mouse button has been released on a component. 
+\begin{DoxyParams}{Parameters}
+{\em e} & the event to be processed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_my_panel_ad512efaf729c549e397b58498bff6043}\label{class_my_panel_ad512efaf729c549e397b58498bff6043}} 
+\index{MyPanel@{MyPanel}!mouseWheelMoved@{mouseWheelMoved}}
+\index{mouseWheelMoved@{mouseWheelMoved}!MyPanel@{MyPanel}}
+\subsubsection{\texorpdfstring{mouseWheelMoved()}{mouseWheelMoved()}}
+{\footnotesize\ttfamily void My\+Panel.\+mouse\+Wheel\+Moved (\begin{DoxyParamCaption}\item[{Mouse\+Wheel\+Event}]{e }\end{DoxyParamCaption})}
+
+Used to check the position of cursor and the moving of the wheel. Invoked when the mouse wheel is rotated. 
+\begin{DoxyParams}{Parameters}
+{\em e} & the event to be processed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_my_panel_a01d8184b14a097e845b1845ddf3e4d7d}\label{class_my_panel_a01d8184b14a097e845b1845ddf3e4d7d}} 
+\index{MyPanel@{MyPanel}!paintComponent@{paintComponent}}
+\index{paintComponent@{paintComponent}!MyPanel@{MyPanel}}
+\subsubsection{\texorpdfstring{paintComponent()}{paintComponent()}}
+{\footnotesize\ttfamily void My\+Panel.\+paint\+Component (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+Calls the UI delegate\textquotesingle{}s paint method, if the UI delegate is non-\/{\ttfamily null}. We pass the delegate a copy of the {\ttfamily Graphics} object to protect the rest of the paint code from irrevocable changes (for example, {\ttfamily Graphics.\+translate}). 
+
+This method is used for custom painting. 
+\begin{DoxyParams}{Parameters}
+{\em g} & This is the graphics used to paint triangle in repaint() method. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_my_panel_a3a0c9daa133938d79c9750bd684967e6}\label{class_my_panel_a3a0c9daa133938d79c9750bd684967e6}} 
+\index{MyPanel@{MyPanel}!setFigures@{setFigures}}
+\index{setFigures@{setFigures}!MyPanel@{MyPanel}}
+\subsubsection{\texorpdfstring{setFigures()}{setFigures()}}
+{\footnotesize\ttfamily void My\+Panel.\+set\+Figures (\begin{DoxyParamCaption}\item[{Array\+List$<$ \mbox{\hyperlink{class_figure}{Figure}} $>$}]{figures }\end{DoxyParamCaption})}
+
+This method is used to add figures to Array\+List. 
+\begin{DoxyParams}{Parameters}
+{\em figures} & These are figures, which will be repainted. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_my_panel_a3a1214eb7ae2f5d5bb1cdb21d8a4b097}\label{class_my_panel_a3a1214eb7ae2f5d5bb1cdb21d8a4b097}} 
+\index{MyPanel@{MyPanel}!setNextFigure@{setNextFigure}}
+\index{setNextFigure@{setNextFigure}!MyPanel@{MyPanel}}
+\subsubsection{\texorpdfstring{setNextFigure()}{setNextFigure()}}
+{\footnotesize\ttfamily void My\+Panel.\+set\+Next\+Figure (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+This method is used to check the name of each figure. 
+\begin{DoxyParams}{Parameters}
+{\em name} & This is the string name of each figure. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_my_panel_8java}{My\+Panel.\+java}}\end{DoxyCompactItemize}
